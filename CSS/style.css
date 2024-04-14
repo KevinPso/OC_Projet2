@@ -205,5 +205,16 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    
+    nav ul a:hover {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
+    }
+
+    nav ul a {
+        display: flex;
+        align-items: center;
+        height: 35px;
+    }
 }
