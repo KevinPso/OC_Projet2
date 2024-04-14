@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 
 :root {
@@ -12,6 +13,41 @@
 .fa-solid {
     color: var(--main-color);
 }
+
+/* Configurations du Header */
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 80px;
+}
+
+.logo {
+    height: 20px;
+  }
+
+nav a {
+    margin-right: 70px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    height: 35px;
+}
+
+nav ul a {
+    display: flex;
+    align-items: flex-end;
+    height: 35px;
+}
+
+nav ul a:focus {
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+}
+/* Existe il une autre pseudo-classe 
+ou une facon de maintenir le focus? */
 
 body {
     display: flex;
@@ -64,7 +100,8 @@ a {
     justify-content: space-between;
 }
 
-.hebergements-and-populaires section {
+.hebergements-and-populaires section,
+.activites section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
@@ -121,7 +158,12 @@ a {
     margin-bottom: 5px;
 }
 
-
+/* Activites */
+.activites {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    height: 1000px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
