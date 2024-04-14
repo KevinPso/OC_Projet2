@@ -42,7 +42,7 @@ nav ul a {
     height: 35px;
 }
 
-nav ul a:focus {
+nav ul a:hover {
     border-top: 3px solid #0065FC;
     color: #0065FC;
 }
