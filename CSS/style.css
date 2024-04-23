@@ -37,6 +37,7 @@
         justify-content: space-between;
         align-items: stretch;
         align-content: stretch;
+        width: 300px;
         border: red 1px solid;
     }
     
@@ -417,22 +418,25 @@ input {
         justify-content: center;
         align-items: stretch;
         align-content: stretch;
+        width: 100%;
         border: 1px solid red;
     }
 
     nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: stretch;
         border: #0065FC solid 1px;
+        width: 100%;
     }
 
-    nav ul li {
-        border: rgb(247, 10, 255) solid 1px;
+    .menu-navigation {
+        border: rgb(84, 5, 212) 1px solid;
+        width: 50%;
+        text-align: center;
     }
-    
-
-    nav ul a:hover {
-        border-top: none;
-        border-bottom: 3px solid #0065FC;
-        color: #0065FC;
-    }
-
+  
 }
