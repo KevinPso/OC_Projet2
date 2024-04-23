@@ -15,39 +15,41 @@
 }
 
 /* Configurations du Header */
-header {
-display: flex;
-align-items: center;
-justify-content: space-between;
-height: 80px;
+@media (min-width: 1024px) {
+   
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: stretch;
+    }
+    
+    .logo {
+        height: 20px;
+      }
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: stretch;
+        border: red 1px solid;
+    }
+    
+    .menu-navigation {
+        border: rgb(84, 5, 212) 1px solid;
+        width: 50%;
+        text-align: center;
+    }
+
+
+    /* Configurations du Header */
 }
 
-.logo {
-    height: 20px;
-  }
-
-nav a {
-    margin-right: 70px;
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-    height: 35px;
-}
-
-nav ul a {
-    display: flex;
-    align-items: flex-end;
-    height: 35px;
-}
-
-nav ul a:hover {
-    border-top: 3px solid #0065FC;
-    color: #0065FC;
-}
-/* Existe il une autre pseudo-classe 
-ou une facon de maintenir le focus? */
 
 body {
     display: flex;
@@ -92,6 +94,164 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+/* Section Recherche */
+.recherche {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.titres h3 {
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.formulaire {
+    display: flex;
+    border-radius: 20px;
+    height: 50px;
+    width: 26em;
+    margin-bottom: 30px;
+}
+
+.icone-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+    border-radius: 25% 0% 0% 25% / 25% 0% 0% 25% ;
+    width: 15%;
+}
+
+.icone-position i {
+    color: black;
+    font-size: 20px;
+}
+
+form {
+    width: 50%;
+}
+
+input {
+    width: 97%;
+    height: 90%;
+}
+
+::placeholder {
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.rechercher input {
+    border-radius: 0% 15% 15% 0% / 0% 35% 35% 0% ;
+    width: 117%;
+    height: 100%;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #0065FC;
+}
+
+.filtres {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.filtres h3 {
+    height: 50px;
+}
+
+.filtres p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.economique {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid #D9D9D9;
+    border-radius: 30px;
+    height: 50px;
+    width: 12em;
+    margin-bottom: 30px;
+}
+
+.icone-eco {
+    font-size: 20px;
+}
+
+.familial {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid #D9D9D9;
+    border-radius: 30px;
+    height: 50px;
+    width: 9em;
+    margin-bottom: 30px;
+}
+
+.icone-familial {
+    font-size: 20px;
+}
+
+.romantique {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid #D9D9D9;
+    border-radius: 30px;
+    height: 50px;
+    width: 11em;
+    margin-bottom: 30px;
+}
+
+.icone-romantique {
+    font-size: 20px;
+}
+
+.pepite {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid #D9D9D9;
+    border-radius: 30px;
+    height: 50px;
+    width: 11em;
+    margin-bottom: 30px;
+}
+
+.economique:hover,
+.familial:hover,
+.romantique:hover,
+.pepite:hover {
+    background-color: #DEEBFF;
+}
+
+.icone-pepite {
+    font-size: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.icone-info {
+    border: 1px solid #D9D9D9;
+    padding: 5px 12px;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+    margin-right: 10px;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -165,6 +325,49 @@ a {
     height: 1000px;
 }
 
+.cadres-activites {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: ;
+    border: rgb(73, 0, 245) 1px solid;
+    height: 400px;
+    margin-top: 30px;
+}
+
+.cadre-activite-1 {
+    display: flex;
+    height: 400px;
+    width: 23%;
+    border: green 1px solid;
+    border-radius: 10px;
+}
+
+.cadre-activite-2 {
+    display: flex;
+    height: 400px;
+    width: 23%;
+    border: green 1px solid;
+    border-radius: 10px;
+}
+.cadre-activite-3 {
+    display: flex;
+    height: 400px;
+    width: 23%;
+    border: green 1px solid;
+    border-radius: 10px;
+}
+.cadre-activite-4 {
+    display: flex;
+    height: 400px;
+    width: 23%;
+    border: green 1px solid;
+    border-radius: 10px;
+}
+
+.activites section {
+    background-color: white;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -194,7 +397,8 @@ a {
         width: 30%;
     }
 
-    .populaires-cards .card-title {
+
+    .card-title {
         font-size: 14px;
     }
 
@@ -206,15 +410,29 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     
+    header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
+        border: 1px solid red;
+    }
+
+    nav {
+        border: #0065FC solid 1px;
+    }
+
+    nav ul li {
+        border: rgb(247, 10, 255) solid 1px;
+    }
+    
+
     nav ul a:hover {
         border-top: none;
         border-bottom: 3px solid #0065FC;
         color: #0065FC;
     }
 
-    nav ul a {
-        display: flex;
-        align-items: center;
-        height: 35px;
-    }
 }
