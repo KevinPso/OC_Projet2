@@ -1,4 +1,4 @@
-/****** General ***********/
+/* General */
 * {
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -14,44 +14,40 @@
     color: var(--main-color);
 }
 
-/* Configurations du Header */
-@media (min-width: 1024px) {
-   
-    header {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: stretch;
-        align-content: stretch;
-    }
-    
-    .logo {
-        height: 20px;
-      }
-    
-    nav {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: stretch;
-        align-content: stretch;
-        width: 300px;
-        border: red 1px solid;
-    }
-    
-    .menu-navigation {
-        border: rgb(84, 5, 212) 1px solid;
-        width: 50%;
-        text-align: center;
-    }
 
+/* Configurations du Header avec la Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    /* Configurations du Header */
+.navbar__logo {
+    height: 20px;
+}
+
+.navbar__links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 80px;
+}
+
+.navbar__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 35px;
+    margin-left: 70px;
+}
+
+.navbar__link:hover {
+    border-top: solid 2px #0065FC;
+    color: #0065FC;
 }
 
 
+/* Configurations du Body */
 body {
     display: flex;
     justify-content: center;
@@ -102,6 +98,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 20px;
 }
 
 .titres h3 {
@@ -319,7 +316,7 @@ input {
     margin-bottom: 5px;
 }
 
-/* Activites */
+/* Section Activites */
 .activites {
     margin-top: 35px;
     margin-bottom: 35px;
@@ -370,9 +367,9 @@ input {
     background-color: white;
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
 
-/****** Media queries ***********/
+/* Media queries */
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
@@ -411,32 +408,39 @@ input {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     
-    header {
-        display: flex;
+    .main-container {
+        padding: 0px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .navbar {
         flex-direction: column;
-        flex-wrap: nowrap;
+    }
+
+    .navbar__logo {
+        padding: 30px;
+    }
+    
+    .navbar__links {
+        justify-content: space-around;
+        align-items: center;
+        height: 40px;
+        width: 100%;
+    }
+    
+    .navbar__link {
         justify-content: center;
-        align-items: stretch;
-        align-content: stretch;
-        width: 100%;
-        border: 1px solid red;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: stretch;
-        align-content: stretch;
-        border: #0065FC solid 1px;
-        width: 100%;
-    }
-
-    .menu-navigation {
-        border: rgb(84, 5, 212) 1px solid;
+        align-items: flex-start;
         width: 50%;
-        text-align: center;
+        margin-left: 0px;
+    }
+    
+    .navbar__link:hover {
+        border-top: none;
+        border-bottom: solid 2px #0065FC;
     }
   
 }
