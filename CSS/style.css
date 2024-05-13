@@ -103,7 +103,7 @@ a {
     margin-top: 20px;
 }
 
-.titres h3 {
+.titres h2 {
     font-weight: normal;
     font-size: 16px;
     margin-top: 10px;
@@ -169,7 +169,7 @@ input {
     gap: 20px;
 }
 
-.filtres h3 {
+.filtres h2 {
     display: flex;
     align-items: center;
     height: 50px;
@@ -275,6 +275,10 @@ input {
 
 .hebergements__card__rating {
     margin-top: 5px;
+}
+
+.hebergements__more {
+    font-size: 18px;
 }
 
 
@@ -390,6 +394,7 @@ input {
 }
 
 .footer__title {
+    font-size: 18px;
     margin-top: 20px;
     margin-left: 20px;
 }
@@ -404,9 +409,6 @@ input {
 .footer__list li {
     margin-top: 20px;
 }
-
-
-
 
 
 /********** Media queries **********/
@@ -444,7 +446,7 @@ input {
         background-color: #0065FC;
     }
 
-    .titres h3 {
+    .titres h2 {
         margin-bottom: 30px;
     }
 
@@ -486,7 +488,7 @@ input {
         width: 10em;
     }
 
-    .filtres h3 {
+    .filtres h2 {
         margin-right: 100%;
     }
 
@@ -516,7 +518,6 @@ input {
     .populaires-cards a {
         width: 30%;
     }
-
 
     .card-title {
         font-size: 14px;
@@ -552,8 +553,6 @@ input {
 @media (max-width: 767.98px) {
 
 /* Margins et Paddings */
-
-
     .main-container {
         padding: 0px;
     }
@@ -682,7 +681,6 @@ input {
         height: 60px;
     }
     
-    
 
     /* Footer */
     .footer {
@@ -691,7 +689,6 @@ input {
 
     .footer__title {
         margin-top: 40px;
-
     }
     
     .pied-de-page {
