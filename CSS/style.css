@@ -4,6 +4,7 @@
     margin: 0;
 }
 
+/* Configuration a la racine */
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -41,6 +42,7 @@
     margin-left: 70px;
 }
 
+/***** Coloration et surlignement du menu au survol de la souris *****/
 .navbar__link:hover {
     border-top: solid 2px #0065FC;
     color: #0065FC;
@@ -142,6 +144,7 @@ input {
     height: 96%;
 }
 
+/***** Modifications du Placeholder pour correspondre a la maquette *****/
 ::placeholder {
     text-align: center;
     font-size: 20px;
@@ -149,6 +152,7 @@ input {
     font-weight: bold;
 }
 
+/***** Mise en place du boutton rechercher *****/
 .rechercher input {
     border-radius: 0% 15% 15% 0% / 0% 35% 35% 0% ;
     width: 117%;
@@ -159,10 +163,12 @@ input {
     background-color: #0065FC;
 }
 
+/***** Retirer l'affichage de l'icone qui remplacera le texte en version mobile *****/
 .rechercher i {
     display: none;
 }
 
+/***** Mise en place des filtres *****/
 .filtres {
     display: flex;
     align-items: center;
@@ -198,6 +204,7 @@ input {
     font-size: 20px;
 }
 
+/***** Changement de couleur au survol *****/
 .btn-filtres:hover {
     background-color: #DEEBFF;
 }
@@ -433,35 +440,12 @@ input {
         padding: 0px;
     }
 
-    .rechercher {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        right: 5px;
-        border-radius: 15px ;
-        width: 50px;
-        height: 50px;
-        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
-        background-color: #0065FC;
-    }
-
     .titres h2 {
         margin-bottom: 30px;
     }
 
     .formulaire  {
         margin-bottom: 15px;
-    }
-
-    .rechercher input {
-        display: none;
-    }
-
-    .rechercher i {
-        display: flex;
-        color: white;
-        font-size: 20px;
     }
 
     .filtres {
@@ -589,7 +573,31 @@ input {
     .recherche {
         padding: 20px;
     }
+    
+    /***** Repositionnement du formulaire *****/
+    .rechercher {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        right: 5px;
+        border-radius: 15px ;
+        width: 50px;
+        height: 50px;
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+        background-color: #0065FC;
+    }
 
+/***** Retirer l'affichage du texte pour afficher l'icone *****/
+    .rechercher input {
+        display: none;
+    }
+
+    .rechercher i {
+        display: flex;
+        color: white;
+        font-size: 20px;
+    }
 
     /* Hebergements et Populaires */
     
